@@ -1,4 +1,4 @@
-package Ficheros1;
+package Ficheros;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,6 +15,6 @@ public class Principal {
             fw.write("Tercera linea\n");
         } catch (IOException e) {
             System.err.println("Error" + e.getMessage());
-        }
+        }//Forma incorrecta de hacerlo
     }
 }
