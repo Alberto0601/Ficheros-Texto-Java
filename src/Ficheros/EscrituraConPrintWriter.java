@@ -33,7 +33,7 @@ public class EscrituraConPrintWriter {
             }
 
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            System.err.println(e.getMessage());//es del FileWriter
         }
-    }
+    }//PrintWitter o BufferedWriter el que quiera
 }
