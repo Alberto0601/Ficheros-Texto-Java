@@ -15,8 +15,6 @@ public class Principal {
             fw.write("Tercera linea\n");
         } catch (IOException e) {
             System.err.println("Error" + e.getMessage());
-        }finally{
-
         }
     }
 }
