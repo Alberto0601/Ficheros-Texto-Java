@@ -16,7 +16,7 @@ public class LecturaFichero {
                 contador++;
             }
         } catch (IOException e) {
-
+                //mensaje de la excepcion
         }
     }
 }
