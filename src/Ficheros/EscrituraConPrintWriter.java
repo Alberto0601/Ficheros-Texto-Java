@@ -15,7 +15,7 @@ public class EscrituraConPrintWriter {
             pw.println("--------------");
             pw.printf("%-20s %5.2f%n","Juan Pérez",8.5);
             pw.printf("%-20s %5.2f%n","María García",9.0);
-            pw.printf("%-20s %5.2f%n","Pedro López",7.5);
+            pw.printf("%-20s %5.2f%n","Pedro López",7.5); //la s es un String||f float (decimales)
 
             //Escribir diferentes tipos directamente
             pw.println();

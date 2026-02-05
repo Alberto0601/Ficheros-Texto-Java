@@ -11,12 +11,12 @@ public class LecturaFichero {
             int contador = 1;
 
             //Lee linea a linea hasta el final
-            while ((linea = br.readLine()) != null) {//bucle while que rompe cuando se termina de leer
+            while ((linea = br.readLine()) != null) {//bucle while que rompe cuando se termina de leer, se procesa linea a linea
                 System.out.println(contador + ". " + linea);
                 contador++;
             }
         } catch (IOException e) {
-                //mensaje de la excepcion
+            System.err.println("Error "+ e.getMessage());
         }
     }
 }
