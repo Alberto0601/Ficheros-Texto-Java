@@ -5,30 +5,19 @@ import java.io.*;
 
 public class Ejer001 {
     static void main() {
-
-        try (BufferedWriter libro = new BufferedWriter(new FileWriter("Arbol Ciencia.txt",true))) {
-            libro.write(""" 
-                    Se considera que “El árbol de la ciencia” es una de las obras capitales de Baroja. 
-                    La escribió en época de plenitud completa y apareció en la biblioteca "Renacimiento", 
-                    en 1911. La vida de Andrés Hurtado, como estudiante de Medicina en el Madrid de finales 
-                    del siglo XIX, es, en gran parte, la vida del novelista, que, en general, no conservaba 
-                    muy buenos recuerdos de sus profesores.\s
-                    """);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        try (BufferedReader br = new BufferedReader(new FileReader("Arbol Ciencia.txt"))) {
-
+        System.out.println("CONTADOR DEL WORD");
+        try(BufferedReader contenido=new BufferedReader(new FileReader("Doc.txt"));) { //muevo el fichero a un lugar y pongo la ruta
             String linea;
             int contador = 1;
-            while ((linea = br.readLine()) != null) {
+
+            //Lee linea a linea hasta el final FALTA LEER PALABRAS,PÁRRAFOS y LEER CARACTERES CON ESPACIOS y SIN ESPACIOS
+            while ((linea = contenido.readLine()) != null) {
                 System.out.println(contador + ". " + linea);
                 contador++;
             }
-
-        } catch (IOException e) {
-            System.err.println("Error " + e.getMessage());
+        }catch (IOException e){
+            System.err.println("Error en el archivo" + e.getMessage());
         }
+        System.out.println("Lectura correcta");
     }
 }
