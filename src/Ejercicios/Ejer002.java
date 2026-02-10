@@ -13,7 +13,12 @@ public class Ejer002 {
                     linea=linea.replace("$empresa","Damian SL ");
                     linea=linea.replace("$rrhh","Carmen rrhh");
                     linea=linea.replace("$departamento","departamento de informática");
+                    linea=linea.replace("$fecha1","marzo 2020");
                     linea=linea.replace("$cargo","departamento de informática");
+                    linea=linea.replace("$motivo","estar cansado mentalmente");
+                    linea=linea.replace("$jefe","Josema");
+                    linea=linea.replace("$nombre","Chema");
+                    linea=linea.replace("$apellido","Chapata");
                 }
 
                 bw.write(linea);
