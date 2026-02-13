@@ -10,6 +10,7 @@ public class Ejer004 {
             String linea=null;
             while ((linea=contenido.readLine())!=null){
                     //Integer.parseInt(linea);
+                    //escritura.write(linea);
             }
 
         }catch (IOException e){
