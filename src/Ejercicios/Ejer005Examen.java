@@ -12,7 +12,7 @@ public class Ejer005Examen {
             while ((linea = br.readLine()) != null) {
 
                 if (linea.contains("font-size:0px;")||linea.contains("display:none;")||linea.contains("visibility:hidden;")) {
-                    System.out.println("Posible Black SEO " + linea);
+                    System.out.println("Posible Black SEO: " + linea);
                 }
             }
         } catch (IOException e) {
