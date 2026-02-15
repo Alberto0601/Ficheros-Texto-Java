@@ -9,8 +9,14 @@ public class Ejer004 {
 
             String linea=null;
             while ((linea=contenido.readLine())!=null){
-                    //Integer.parseInt(linea);
-                    //escritura.write(linea);
+                    int leerNums=Integer.parseInt(linea);
+
+                    if (leerNums%2==0){
+                        System.out.println("Es par "+linea);
+                    }
+                    else {
+                        System.out.println("Es impar "+ linea);
+                    }
             }
 
         }catch (IOException e){
