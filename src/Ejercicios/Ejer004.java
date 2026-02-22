@@ -13,12 +13,15 @@ public class Ejer004 {
 
                     if (leerNums%2==0){
                         System.out.println("Es par "+linea);
+
+                        //escritura.write(linea);
+                        //escritura.newLine();
                     }
                     else {
                         System.out.println("Es impar "+ linea);
                     }
-            }
 
+            }
         }catch (IOException e){
             System.err.println("Error en el archivo "+e.getMessage());
         }
